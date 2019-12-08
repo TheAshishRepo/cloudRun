@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route("/", methods=["GET"])
 def homepage():
     if request.method == "GET":
-        return jsonify({"message": "Hello World!"})
+        return jsonify({"message": "Hello User!"})
 
 PORT = int(os.environ.get("PORT", 8080))
 if __name__ == '__main__':
